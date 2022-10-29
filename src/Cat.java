@@ -25,12 +25,12 @@ public class Cat
     // (make any messages you want!) rather than always returning "meow".
     // Each message should have equal chance of being returned.
     public String speak() {
-        double random = Math.random();
-        if (random > 0.66){
-            return "I want to go to sleep.";
+        double random = (int) (Math.random() * 3) + 1 ;
+        if (random == 1){
+            return "moo";
         }
-        else if (random > 0.33){
-            return "I can't find my fur ball";
+        else if (random == 2){
+            return "purr";
         }
         else {
             return "meow!";
